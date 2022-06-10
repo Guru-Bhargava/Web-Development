@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+</head>
+<style>
+    h1{
+        background-color: red;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+    }
+    /*div li p{ if p is contained by ani li which is contained by div
+        color: yellow;
+        background-color: green;
+        font-weight: bold;
+    }*/
+
+    /*div > p{ only affects for immediate child of div
+        color: yellow;
+        background-color: green;
+        font-weight: bold;
+    }*/
+
+    /*div + p{ immediately comes after div
+        color: white;
+        background-color: rgb(218, 114, 114);
+    }*/
+</style>
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item">
+                    <p>This is another para inside li</p>
+                </li>
+                <li>This wont get affected</li>
+                <p>This is a para inside ul</p>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+</html>
