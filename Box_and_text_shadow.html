@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+</head>
+<style>
+    .container{
+        display: flex;
+    }
+    .card{
+        padding: 23px 12px;
+        margin: 23px 12px;
+        /*border: 2px solid red;*/
+        background-color: burlywood;
+
+/* box-shadow : offset-x offset-y color */
+/* box-shadow : offset-x offset-y blur-radius color */
+/* box-shadow : offset-x offset-y blur-radius spread-radius color */
+
+        /*box-shadow: 10px 13px green;*/  /*for right and down*/
+        /*box-shadow: -10px -13px green; /*for left and up*/
+        /*box-shadow: 10px 13px 10px green;  /*3rd one is for blur radius(10px)*/
+        /*box-shadow: -10px -13px 10px green;  */
+        /*box-shadow: -10px -13px 10px 1px green;  */
+        /* box-shadow: inset 33px 55px green; takes the shadow inside the box instead of outside */
+
+        box-shadow: 3px 5px red, 14px 16px yellow;/*it gives multiple shadows*/
+    }
+    .card h2{
+        text-shadow: 3px 4px 2px white;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="car-1">
+            <h2>This is c++ course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam praesentium hic tempora saepe obcaecati sequi modi cum architecto optio laboriosam eius, error quis quo. Molestiae voluptatem voluptate, aperiam repellendus odit eius? Quas, et quisquam!</p>
+        </div>
+        <div class="card" id="car-2">
+            <h2>This is html course</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque dolores ut, incidunt consequuntur praesentium nostrum modi, voluptatum beatae quos rerum deleniti culpa quis porro ipsam numquam soluta natus amet illo ad cupiditate! Facere, sed.</p>
+        </div>
+        <div class="card" id="car-3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quisquam repellendus eius iusto totam, pariatur accusamus nulla ducimus nam illum eveniet, sapiente magni rem iure deleniti minus maiores in ex velit nobis quod dolor!</p>
+        </div>
+    </div>
+</body>
+</html>
